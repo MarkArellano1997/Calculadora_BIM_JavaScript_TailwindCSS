@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora BIM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 h-screen">
+    <div class="bg-white h-2/6 w-1/5 rounded flex flex-col mx-auto mt-48 px-8">
+        <h1 class="text-2xl font-semibold mt-10 text-center">Calculadora BMI</h1>
+        <form id="form" class="flex flex-col">
+            <div id="error" class="text-red-500 text-center"></div>
+            <label class="mt-4" for="peso">Peso (Kg):</label>
+            <input class="bg-slate-100 rounded-full text-center" type="number">
+            <label for="altura">Altura (cm):</label>
+            <input class="bg-slate-100 rounded-full text-center" type="number">
+        </form>
+        <button onclick="calcular()" class="w-full bg-blue-500 rounded-full mt-4 text-white p-2 font-semibold">
+            Calcular BIM
+        </button>
+        <div class="text-center mt-4 font-semibold" id="resultado"></div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
